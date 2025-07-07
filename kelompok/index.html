@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Store</title>
+
+     
+    <!-- feather icon -->
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+      <script src="https://unpkg.com/feather-icons"></script>
+      
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+
+    <!-- navbar -->
+<nav class="navbar">
+ <div style="display: flex; align-items: center; justify-content: flex-start;">
+    <a href="#" class="navbar-logo">Beauty<span>Store</span></a>
+   
+</a>
+</div>
+
+
+    <div class="navbar-nav">
+        <a href="#Home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#Product">Product</a>
+        <a href="#Contact">Contact</a>
+        
+    </div>
+
+    <div class="navbar-extra">
+        <a href="#" id="search-btn"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="https://maps.app.goo.gl/RAUiqKuhqdXzVi85A" id="map-pin"><i data-feather="map-pin"></i></a>
+
+    </div>
+   
+
+    <div id="search-box" style="display: none;">
+  <input type="text" id="search-input" placeholder="Cari produk...">
+    </div>
+
+    <div id="cart-items" style="display: none;">
+  <h3>Keranjang Belanja</h3>
+  <ul id="cart-list"></ul>
+  <p id="empty-cart-msg">Belum ada produk di keranjang.</p>
+</div>
+
+
+</nav>
+
+<section class="hero" id="Home">
+    <main class="content">
+        <h2>Belanja Kosmetik Online di BeautyStore.</h2>
+        <p>All-in-one cosmetic & skincare store for every skin type</p>
+        <a href="#Product" class="cta"> Shop Now</a>
+    </main>
+</section>
+
+<section class="about" id="about">
+  <h2>Tentang<span>kami.</span></h2>
+
+  <div class="row">
+    <div class="about-img">
+      <img src="img/foto.jpeg" alt="tentangkami">
+    </div>
+  
+   <div class="content">
+    <h3>Kenapa Harus Toko kami?</h3>
+    <p>Toko kami selalu memberikan penawaran menarik, mulai dari potongan harga, bundling hemat, hingga flash sale setiap bulannya. Kualitas premium tetap bisa kamu dapatkan tanpa membuat kantong bolong!
+
+</p>
+   </div>
+   </div>
+   
+
+</section>
+
+<!-- Promo Section 1 amirulfata-->
+ <section id="Product">
+    <div class="promo-container">
+      <div class="promo-video slide-in-left">
+        <video src="video1.mp4" autoplay muted loop playsinline></video>
+      </div>
+      <div class="promo-text-wrapper slide-in-right">
+        <div class="promo-text">
+          <small>Formula terbaik untuk Bibir Cantikmu</small>
+          <h1>mousse tint Bareendbliss💄</h1>
+          <div class="emoji"></div>
+          <p>
+            Mouse Tint Bareendbliss — tampil cute, nyaman dipakai, dan pas banget buat kamu yang stylish tiap hari 💖 <br />
+            Formula lembut yang memancarkan glow alami, lembap & bercahaya.
+          </p>
+          <button class="btn">✨ Dapatkan Sekarang</button>
+        </div>
+      </div>
+    </div></section>
+
+    <div class="promo-container" style="flex-direction: row-reverse">
+      <div class="promo-video slide-in-right">
+        <video src="img/video4.mp4" autoplay muted loop playsinline></video>
+      </div>
+      <div class="promo-text-wrapper slide-in-left">
+        <div class="promo-text text-center text-md-start">
+          <small>FORMULA TERBARU UNTUK MATA INDAHMU</small>
+          <h1>
+            💖 MASCARA
+            <strong>RARE BEAUTY</strong>
+          </h1>
+          <p style="margin-top: 10px">
+            bikin bulu mata lentik natural seharian. Nggak menggumpal, ringan dipakai, dan bikin mata kamu makin pop!✨ <br />
+          </p>
+          <button class="btn"> Dapatkan Sekarang</button>
+        </div>
+      </div>
+    </div>
+
+
+<!-- intan fadillah -->
+<div class="container py-5">
+  <h2 class="text-center mb-4 text-danger"></h2>
+  <p></p>
+  <div class="product-container">
+
+  
+    <div class="product-card">
+      <img src="img/lips serum.jpeg" alt=" Lip Serum" class="img-fluid product-img mb-3">
+      <h5> Lip Serum</h5>
+      <p class="text-muted">Melembapkan dan mencerahkan bibir secara alami.</p>
+      <p class="fw-bold text-danger">Rp 49.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    
+    <div class="product-card">
+      <img src="img/fair lovely.jpeg" alt="IRM Bright Cream" class="img-fluid product-img mb-3">
+      <h5> Bright Cream</h5>
+      <p class="text-muted">Krim wajah untuk kulit cerah dan sehat.</p>
+      <p class="fw-bold text-danger">Rp 75.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="product-card">
+      <img src="img/barenbliss Ceramoist Glow Lip Serum.jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-3">
+      <h5> Lip serum barenbliss</h5>
+      <p class="text-muted">Lips serum cerahkan bibir dan hasil permanen</p>
+      <p class="fw-bold text-danger">Rp 20.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+  
+    <div class="product-card">
+      <img src="img/Beauty intan.jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-3">
+      <h5>sunscreen </h5>
+      <p class="text-muted">Sinar matahari bukan musuh, asal pakai sunscreen</p>
+      <p class="fw-bold text-danger">Rp 150.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/G2G Glad2Glow Cremy Berry Body Serum.jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-3">
+      <h5>Glad2Glow body serum</h5>
+      <p class="text-muted">dapat membuat kulit menjadi lebih bercahaya</p>
+      <p class="fw-bold text-danger">Rp 80.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/Lip Tint Barenbliss .jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-3">
+      <h5>Lip Tint Barenbliss</h5>
+      <p class="text-muted">Lip Tint Beauty ringan, tahan lama, bikin bibir merona alami</p>
+      <p class="fw-bold text-danger">Rp 40.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/eyshedo.jpg" alt="IRM Face Wash" class="img-fluid product-img mb-3">
+      <h5>eyeshadow Pink</h5>
+      <p class="text-muted">Eyeshadow yang bikin semua mata tetuju padamu</p>
+      <p class="fw-bold text-danger">Rp 200.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/Rice Milk Lotion _ Sake Body Lotion.jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-4">
+      <h5>Milk lotion body lotion</h5>
+      <p class="text-muted">body lotion cocok untuk kulit kering, dan mencerahkan</p>
+      <p class="fw-bold text-danger">Rp 300.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/zesea eylener.jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-3">
+      <h5>winged liner</h5>
+      <p class="text-muted">Ciptakan winged liner sempurna dalam sekali gores.</p>
+      <p class="fw-bold text-danger">Rp 350.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/Bulu mata.jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-4">
+      <h5>Bulu mata</h5>
+      <p class="text-muted">Auto cantik cuma dalam 10 detik</p>
+      <p class="fw-bold text-danger">Rp 100.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/lensa mata.jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-2">
+      <h5>Eyeshare choce softlens</h5>
+      <p class="text-muted">Tatapanmu, pesonamu.Lensa Beauty Store rahasianya</p>
+      <p class="fw-bold text-danger">Rp 75.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/Maxi Lashes Mascara.jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-4">
+      <h5>Maxi Lashes Mascara</h5>
+      <p class="text-muted">Maskara waterproof & smudgeproof</p>
+      <p class="fw-bold text-danger">Rp 250.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/PINKFLASH Pensil Alis .jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-3">
+      <h5>PINKFLASH Pensil Alis</h5>
+      <p class="text-muted">Alis rapi, natural seharian.</p>
+      <p class="fw-bold text-danger">Rp 240.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/ponst.jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-3">
+      <h5>ponds</h5>
+      <p class="text-muted">kulit glowing? Pakai POND'S aja</p>
+      <p class="fw-bold text-danger">Rp 50.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+    <div class="product-card">
+      <img src="img/Celimax Heart Pink Tone Up Sun Cream .jpeg" alt="IRM Face Wash" class="img-fluid product-img mb-3">
+      <h5>tone up cream</h5>
+      <p class="text-muted">melembabkan kulit</p>
+      <p class="fw-bold text-danger">Rp 39.000</p>
+      <button class="btn btn-outline-danger w-100 add-to-cart">Beli Sekarang</button>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- kontak intanalifia-->
+
+ <section id="Contact" class="Contact-section">
+  <h2>kontak <span>kami</span></h2>
+  <p>Kirim pesanmu lewat kontak di bawah ini, ya!</p>
+
+  <div class="card-container">
+      <div class="card">
+        <img src="img/1.jpg" alt="Intan Alifiya" />
+        <h2>Intan Alifiya</h2>
+        <p>"Hari ini mungkin nggak sempurna, tapi kamu tetap hebat karena sudah bertahan"</p>
+        <div class="socials">
+          <a href="https://instagram.com/ntanalfya" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://github.com/intanalifiya" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/2.jpg" alt="Rizka Azzuhra" />
+        <h2>Rizka Azzuhra</h2>
+        <p>"Berkembang setiap hari, dari baris kode hingga mimpi yang jadi nyata."</p>
+        <div class="socials">
+          <a href="https://instagram.com/rizkazzuhra" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://github.com/ika-alt" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/3.jpg" alt="Milatul Salwa" />
+        <h2>Milatul Salwa</h2>
+        <p>"Kamu tidak harus hebat untuk memulai, tapi kamu harus mulai untuk jadi hebat"</p>
+        <div class="socials">
+          <a href="https://instagram.com/milatulslw_" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://github.com/milatul00" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/4.jpg" alt="Intan Fadillah" />
+        <h2>Intan Fadillah</h2>
+        <p>"Gak perlu lebih hebat dari orang lain, cukup lebih baik dari diri kita yang kemarin"</p>
+        <div class="socials">
+          <a href="https://instagram.com/intn_fdlh" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://github.com/fadillah0" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/5.jpg" alt="Amirul Fata" />
+        <h2>Amirul Fata</h2>
+        <p>"Nggak ada error yang abadi, semua bisa di-fix dengan logika dan usaha"</p>
+        <div class="socials">
+          <a href="https://instagram.com/amrlfata_" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://github.com/amirulfata" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <!-- Footer -->
+  <footer class="text-center mt-5 p-3 bg-light">
+    <small>&copy; 2025 IRM Beauty. All rights reserved.</small>
+  </footer>
+  
+
+    <!-- feather icon -->
+     <script>
+      feather.replace();
+    </script>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
